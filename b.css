@@ -24,3 +24,46 @@
 	font-size: 28px;
 	font-weight: bol
 }
+.col-2 p {
+	line-height: 5px;
+	margin: 2px;
+}
+.col-5 img{
+	width: 100px;
+	border-radius: 50%;
+	margin-left: 380px;
+}
+
+.mail img{
+	width: 24px;
+}
+
+.logos img{
+	width: 150px;
+	border-color: black;
+	border-width: 10px solid;
+	border-radius: 10%;
+}
+
+.cl{
+	background-color: #cc0000;
+	color: white;
+}
+
+.about ul li, ul p, li a{
+	display: inline;
+	padding: 37px;
+	margin-left: 10px;
+	text-decoration: none;
+	color: black;
+}
+
+.menu h1{
+	/*margin-left: 500px;
+	margin-top:25px;*/
+	position: relative;
+	top: 25px;
+	left: 500px;
+	border-color: red;
+
+	
