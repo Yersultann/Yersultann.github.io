@@ -1,4 +1,11 @@
 
+p {
+  font-size: 1.5rem;
+}
+@media only screen and (max-width: 600px) {
+  p {font-size: 1rem;}
+}
+
 .col-2 p {
 	line-height: 5px;
 	margin: 2px;
@@ -46,9 +53,6 @@ body {font-family: Verdana, sans-serif; margin:0}
 
 .mySlides {display: none}
 
-p {
-  font-size: 1.5rem;
-}
 
 /* Slideshow container */
 .slideshow-container {
@@ -209,10 +213,5 @@ input[type=submit]:hover {
 
 .text-about-us {
   color: white;
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 600px) {
-  p {font-size: 1rem;}
 }
 	
