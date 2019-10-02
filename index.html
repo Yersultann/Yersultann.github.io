@@ -68,6 +68,37 @@
 	<img src="convert.png" alt="">
 	Оформить заказ
 </div>
+	
+<!-- FORM -->
+<div id="myForm">
+	<div id="form-div"class="row d-flex justify-content-center">
+		<div class="form col-lg-4 col-sm-10">
+			<span class="close">&times;</span>
+			<div class="order-h">
+				<h3 class="text-center mt-4 pb-2">Оставить заявку</h3>
+			</div>
+			<p class="text-center">Мы обязательно с вами свяжемся</p>
+			<form action="/action_page.php">
+		    	<label for="name">Имя*</label>
+			    <input type="text" id="name" name="name" placeholder="Ваше имя...">
+
+			    <label for="email">Эл.почта*</label>
+			    <input type="text" id="email" name="email" placeholder="Элктронная почта...">
+
+			    <label for="phone">Телефон*</label>
+			    <input type="text" id="phone" name="phone" placeholder="Номер телефона...">
+
+			    <label for="theme">Тема*</label>
+			    <input type="text" id="theme" name="theme" placeholder="Тема письма...">
+
+			    <textarea id="subject" name="subject" placeholder="Ваш комментарий.." style="height:100px"></textarea>
+
+			    <input type="submit" value="Отправить">
+		  </form>
+		</div>
+	</div>
+</div>
+
 
 	<script src="b.js"></script>
 </body>
