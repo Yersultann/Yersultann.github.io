@@ -1,29 +1,4 @@
-.modal {
-	display: none;
-	position: fixed;
-	z-index: 1;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	overflow: auto;
-	background-color: rgba(0,0,0,0.8);
-}
 
-.modal-content {
-	background-color: #fefefe;
-	margin: 15% auto;
-	padding: 20px;
-	border: 1px solid #888;
-	width: 80%;
-}
-
-.close {
-	color: #aaa;
-	float: right;
-	font-size: 28px;
-	font-weight: bol
-}
 .col-2 p {
 	line-height: 5px;
 	margin: 2px;
@@ -66,4 +41,177 @@
 	left: 500px;
 	border-color: red;
 
+body {font-family: Verdana, sans-serif; margin:0}
+
+.mySlides {display: none}
+
+p {
+  font-size: 1.5rem;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  margin-top: -22px;
+  font-size: 3rem;
+ 
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 3rem;
+  font-weight: 600;
+  padding: 0px 20px;
+  position: absolute;
+  bottom: 45%;
+  width: 100%;
+  text-align: center;
+}
+
+/* Fading animation */
+.fade-carousel {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 800px) {
+  .prev, .next,.text {font-size: 1.5rem;}
+}
+
+/*FLEX-BTN*/
+
+#order-btn {
+  cursor: pointer;
+  position: fixed;
+  top: 500px;
+  right: -75px;
+  box-sizing: border-box;
+  -webkit-transform: rotate(-90deg);
+  background-color: #E31515;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px 5px 0 0;
+  padding: 4px;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 800px) {
+  #order-btn {display: none;}
+}
+
+/*FORM*/
+
+/*Backround style for form*/
+#myForm {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*Style of form*/
+.form {
+  background-color: white;
+  padding: 10px;
+  width: 50%;
+  height: 80%;
+  margin: 5%;
+}
+
+.form h3 {
+  background-color:#E31515;
+  color: white;
+}
+
+.order-h {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.close:hover {
+  cursor: pointer;
+}
+
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 5px;
+  border: 2px solid #E31515;
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #E31515;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #bb1111;
+}
+
+/*About Us*/
+
+.about-us {
+  background-image: url(sheeps.jpg);
+  width: 100%;
+}
+
+.text-about-us {
+  color: white;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+  p {font-size: 1rem;}
+}
 	
