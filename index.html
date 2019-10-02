@@ -38,13 +38,36 @@
 	        <li><a href="#">КОНТАКТЫ</a></li>
 	    </ul>
 	</div>
-	<button id="myBtn">Open Model</button>
-	<div id="myModal" class="modal">
-		<div class="modal-content">
-			<span class="close" id="close">&times;</span>
-			<p>Модальное окно</p>
-		</div>
+	
+	<!-- CAROUSEL -->
+<div class="slideshow-container mb-2">
+
+	<div class="mySlides fade-carousel">
+	  <img src="sausage1.jpg" style="width:100%">
+	  <div class="text">Изготовление и продажа колбасных изделий</div>
 	</div>
+
+	<div class="mySlides fade-carousel">
+	  <img src="sausage2.jpg" style="width:100%">
+	  <div class="text">Более 1000 наименований</div>
+	</div>
+
+	<div class="mySlides fade-carousel">
+	  <img src="sausage3.jpg" style="width:100%">
+	  <div class="text">Новейшие технологии производства</div>
+	</div>
+
+	<a onclick="plusSlides(-1)"><span class="prev">&#10094;</span></a>
+	<a  onclick="plusSlides(1)"><span class="next">&#10095;</span></a>
+</div>
+
+<!-- FLEX-BTN -->
+
+<div id="order-btn">
+	<img src="convert.png" alt="">
+	Оформить заказ
+</div>
+
 	<script src="b.js"></script>
 </body>
 </html>
