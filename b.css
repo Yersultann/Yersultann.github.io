@@ -1,32 +1,38 @@
 html { overflow-x: hidden; }
+
 p {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
-.col-2 p {
+.col-4 p {
 	line-height: 5px;
-	margin: 2px;
-}
-.col-5 img{
-	width: 100px;
-	border-radius: 50%;
-	margin-left: 380px;
+	margin: 4px;
 }
 
 .mail img{
 	width: 24px;
 }
 
+.logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .logos img{
-	width: 150px;
+	width: 100px;
 	border-color: black;
 	border-width: 10px solid;
-	border-radius: 10%;
+	border-radius: 50%;
 }
 
 .cl{
 	background-color: #cc0000;
 	color: white;
+  height: 120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .nav-list {
@@ -43,24 +49,41 @@ p {
   font-size: 20px;
   display: inline-block;
   margin-top: 10px;
+
 }
 
 @media all and (orientation:portrait) {
+  .contcts {
+    display: none;
+  }
+
   .nav-list .line {
     display: none;
   }
+  .nav-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .nav-list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  }
+
+  .nav-list li a {
+  width: 90%;
+  text-align: center;
+  background-color: #ffb3b3;
+}
 }
 
 .nav-list li a {
+  display: inline-block;
   text-decoration: none;
   color: black;
-}
-
-@media all and (orientation:portrait) {
-  .nav-list {
-    flex-direction: column;
-  }
-
 }
 
 .menu h1{
@@ -133,7 +156,7 @@ body {font-family: Verdana, sans-serif; margin:0}
   to {opacity: 1}
 }
 
-@media only screen and (max-width: 800px) {
+@media all and (max-width: 800px) {
   .prev, .next,.text {font-size: 1.5rem;}
 }
 
@@ -154,7 +177,7 @@ body {font-family: Verdana, sans-serif; margin:0}
   z-index: 1;
 }
 
-@media only screen and (max-width: 800px) {
+@media all and (max-width: 800px) {
   #order-btn {display: none;}
 }
 
@@ -310,7 +333,7 @@ input[type=submit]:hover {
   background-color: #e31515;
 }
 
-@media only screen and (max-width: 1000px) {
+@media all and (max-width: 1000px) {
   .footer-blocks {
     flex-direction: column;
     align-items: center;
@@ -326,6 +349,6 @@ input[type=submit]:hover {
 	border-radius: 400px;
 }
 
-@media only screen and (max-width: 600px) {
-  p {font-size: 1rem;}
+@media all and (max-width: 600px) {
+  p h2 {font-size: 0.5rem;}
 }
