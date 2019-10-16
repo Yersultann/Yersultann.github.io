@@ -7,13 +7,13 @@ p {
 }
 
 .col-4 p {
-	line-height: 5px;
-	margin: 4px;
+  line-height: 5px;
+  margin: 4px;
   font-size: 1rem;
 }
 
 .mail img{
-	width: 24px;
+  width: 24px;
 }
 
 .logos {
@@ -23,15 +23,15 @@ p {
 }
 
 .logos img{
-	width: 100px;
-	border-color: black;
-	border-width: 10px solid;
-	border-radius: 50%;
+  width: 100px;
+  border-color: black;
+  border-width: 10px solid;
+  border-radius: 50%;
 }
 
 .cl{
-	background-color: #cc0000;
-	color: white;
+  background-color: #cc0000;
+  color: white;
   height: 120px;
   display: flex;
   justify-content: space-around;
@@ -113,12 +113,12 @@ p {
 }
 
 .menu h1{
-	/*margin-left: 500px;
-	margin-top:25px;*/
-	position: relative;
-	top: 25px;
-	left: 500px;
-	border-color: red;
+  /*margin-left: 500px;
+  margin-top:25px;*/
+  position: relative;
+  top: 25px;
+  left: 500px;
+  border-color: red;
 }
 
 .mySlides {display: none}
@@ -296,29 +296,29 @@ input[type=submit]:hover {
 }
 
 .varenny {
-	width: 100%;
-	height: 80%;
+  width: 100%;
+  height: 80%;
 }
 
 .colb-type {
-	color: #480202;
+  color: #480202;
 }
 
 .navigator {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .partn1 {
-	width: 220px;
+  width: 220px;
 }
 
 .partn2 {
-	width: 140px;
+  width: 140px;
 }
 
 .partn3 {
-	width: 	300px;
+  width:  300px;
 }
 
 @media all and (max-width: 1100px) {
@@ -394,25 +394,26 @@ input[type=submit]:hover {
 }
 
 .logo {
-	width: 40%;
-	border-radius: 400px;
-	margin-bottom: 10px;
+  width: 30%;
+  border-radius: 400px;
+  margin-bottom: 20px;
 }
 
 .footer-container p {
   font-size: 1rem;
 }
 
+@media all and (orientation:portrait) {
+  .block-img img {
+    width: 70%;
+}
+}
+
 @media all and (max-width: 800px) {
   .block h2 {font-size: 1rem;}
-  .first-block {height: 100px;}
-  .second-block {height: 100px;}
-  .third-block {height: 100px;}
+  .first-block {height: 150px;}
+  .second-block {height: 150px;}
+  .third-block {height: 150px;}
 } 
 
-@media all and (orientation:portrait) {
-  .block h2 {font-size: 1rem;}
-  .first-block {height: 100px;}
-  .second-block {height: 100px;}
-  .third-block {height: 100px;}
-  }
+
