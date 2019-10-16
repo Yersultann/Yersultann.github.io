@@ -36,108 +36,94 @@
 		<div class="col-4">
 		</div>
 	</div>
+
 	<div class="about">
 		<ul class="nav-list">
-	        <li><a href="#">АССОРТИМЕНТ</a></li>
+					<li class="line">|</li>
+	        <li><a href="#assortiment">АССОРТИМЕНТ</a></li>
 					<li class="line">|</li>
 	        <li><a href="#about">О НАС</a></li>
 					<li class="line">|</li>
-	        <li><a href="#">ЗАКАЗ</a></li>
+	        <li id="order-btn1"><a href="#">ЗАКАЗ</a></li>
 					<li class="line">|</li>
-	        <li><a href="#">КОНТАКТЫ</a></li>
+	        <li><a href="#contacts">КОНТАКТЫ</a></li>
+	        		<li class="line">|</li>
 	    </ul>
 	</div>
 
 	<!-- CAROUSEL -->
-<div class="slideshow-container mb-2">
+	<div class="slideshow-container mb-2">
 
-	<div class="mySlides fade-carousel">
-	  <img src="sausage1.jpg" style="width:100%">
-	  <div class="text">Изготовление и продажа колбасных изделий</div>
+		<div class="mySlides fade-carousel">
+		  <img src="sausage1.jpg" style="width:100%">
+	 	 <div class="text">SSS <br>Изготовление и продажа колбасных изделий</div>
+		</div>
+
+		<div class="mySlides fade-carousel">
+		  <img src="sausage2.jpg" style="width:100%">
+		  <div class="text">Более 1000 наименований</div>
+		</div>
+
+		<div class="mySlides fade-carousel">
+		  <img src="sausage3.jpg" style="width:100%">
+		  <div class="text">Новейшие технологии производства</div>
+		</div>
+
+		<a onclick="plusSlides(-1)"><span class="prev">&#10094;</span></a>
+		<a  onclick="plusSlides(1)"><span class="next">&#10095;</span></a>
 	</div>
 
-	<div class="mySlides fade-carousel">
-	  <img src="sausage2.jpg" style="width:100%">
-	  <div class="text">Более 1000 наименований</div>
+	<div class="banner">
+		<section class="index-banner">
+			<div class="vertical-center">>
+				<h1>SSS <br>Только лучшее!</h1>
+				</div>
+		</section>
 	</div>
-
-	<div class="mySlides fade-carousel">
-	  <img src="sausage3.jpg" style="width:100%">
-	  <div class="text">Новейшие технологии производства</div>
-	</div>
-
-	<a onclick="plusSlides(-1)"><span class="prev">&#10094;</span></a>
-	<a  onclick="plusSlides(1)"><span class="next">&#10095;</span></a>
-</div>
 
 <!-- FLEX-BTN -->
 
-<div id="order-btn">
-	<img src="convert.png" alt="">
-	Оформить заказ
-</div>
+	<div id="order-btn">
+		<img src="convert.png" alt="">
+		Оформить заказ
+	</div>
 
 <!-- FORM -->
-<div id="myForm">
-	<div id="form-div"class="row d-flex justify-content-center">
-		<div class="form col-lg-4 col-sm-10">
-			<span class="close">&times;</span>
-			<div class="order-h">
-				<h3 class="text-center mt-4 pb-2">Оставить заявку</h3>
-			</div>
-			<p class="text-center">Мы обязательно с вами свяжемся</p>
-			<form action="/action_page.php">
-		    	<label for="name">Имя*</label>
-			    <input type="text" id="name" name="name" placeholder="Ваше имя...">
-
-			    <label for="phone">Телефон*</label>
-			    <input type="text" id="phone" name="phone" placeholder="Номер телефона...">
-
-			    <label for="theme">Адрес доставки*</label>
-			    <input type="text" id="theme" name="theme" placeholder="Адрес доставки...">
-
-			    <label for="order">Ваш заказ*</label>
-			    <textarea id="subject" name="subject" placeholder="Наименование товара и вес.." style="height:100px"></textarea>
-
-			    <input type="submit" value="Отправить">
-		  </form>
-		</div>
-	</div>
-</div>
-
-<div class="row clr justify-content-center mt-5 " id="about">
-		<img src="line.jpg" alt="">
-		<h1>О НАС</h1>
-		<img src="line.jpg" alt="">
-	</div>
-	<div class="row mt-5">
-		<div class="col-6 ">
-			<div class="container">
-				<div class="col-12 ml-5">
-					<h3>Колбасный цех ТОО</h3>
-					<p>Наш колбасный цех основан в 1991 году, Садыковым Сабитом Султановичем, отсюда аббревиатура "SSS" Цех расположен в Жамбылской области, село Кулан, откуда родом сам основатель. Оборудование было завезено из Германии и до сих пор, вся продукция делается строго по немецким технологиям. Качество и работа строго контролируется самим основателем, ведь члены его семьи - дети и внуки, являются основными клиентами и критиками. В нашей продукции используется ТОЛЬКО настоящее, высококачественное мясо и специй. Без вредных добавок, химикатов, сои и ГМО. В ассортименте имеется вареная и копченая продукция, самого наивысшего качества!</p>
+	<div id="myForm">
+		<div id="form-div"class="row d-flex justify-content-center">
+			<div class="form col-lg-4 col-sm-10">
+				<span class="close">&times;</span>
+				<div class="order-h">
+					<h3 class="text-center mt-4 pb-2">Оставить заявку</h3>
 				</div>
-			</div>
-		</div>
-		<div class="col-6">
-			<div class="col-12 mr-3">
-				<iframe width="500" height="280" src="video.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div>
-		</div>
-</div>
+				<p class="text-center">Мы обязательно с вами свяжемся</p>
+				<form action="/action_page.php">
+			    	<label for="name">Имя*</label>
+				    <input type="text" id="name" name="name" placeholder="Ваше имя...">
 
-<!-- About US -->
-<div class="about-us my-5">
-	<div class="d-flex justify-content-end">
-		<div class="col-lg-6 col-sm-8 text-about-us m-5 pr-lg-5">
-			<p class="text-center"> The Sausage Maker, Inc is the ultimate resource for hunters, gatherers, anglers, farmers and just about anyone else who ikes to take game, meats, fruits and vegetables and transform them into the sausage, cider and vegetable recipes that have been handed down by generations of like-minded folks.
-			</p>
-			<p class="text-center">In 1972, after decades of making sausages and cured meats, both at home and professionally, the late Rytek Kutas founded The Sausage Maker, Inc. The reason: finding quality sausage casings, cures and spices at an affordable price was extremely difficult in many parts of of the country. The issue wasn’t just about supplying the products, it was about helping folks to keep their family traditions alive.
-			</p>
+				    <label for="phone">Телефон*</label>
+				    <input type="text" id="phone" name="phone" placeholder="Номер телефона...">
+
+				    <label for="theme">Адрес доставки*</label>
+				    <input type="text" id="theme" name="theme" placeholder="Адрес доставки...">
+
+				    <label for="order">Ваш заказ*</label>
+				    <textarea id="subject" name="subject" placeholder="Наименование товара и вес.." style="height:100px"></textarea>
+
+				    <input type="submit" value="Отправить">
+			  </form>
+			</div>
 		</div>
 	</div>
-</div>
-<div class="navigator">
+
+
+	<div class="d-flex justify-content-center mt-5 " id="assortiment">
+		<div class="clr">
+			<h2>АССОРТИМЕНТ</h2>
+		</div>
+	</div>
+
+	<div class="navigator">
 		<div class="container">
 			<div class="row colb_type">
 				<div class="col-lg-6 text-center">
@@ -208,47 +194,78 @@
 			</div>
 		</div>
 	</div>
+
+
+	<div class="d-flex justify-content-center mt-5 " id="about">
+		<div class="clr">
+			<h2 class="d-block">О НАС</h2>
+		</div>
+	</div>
+<!-- About US -->
+	<div class="my-4 container">
+		<div class="row">
+			<div class="col-lg-6 col-12 text-right border-right pr-5">
+				<h3>Колбасный цех ТОО</h3>
+				<p>Наш колбасный цех основан в 1991 году, Садыковым Сабитом Султановичем, отсюда аббревиатура "SSS" Цех расположен в Жамбылской области, село Кулан, откуда родом сам основатель. Оборудование было завезено из Германии и до сих пор, вся продукция делается строго по немецким технологиям. </p>
+			</div>
+			<div class="col-lg-6 col-sm-12 border-left pl-4">
+				<div class="video">
+					<iframe width="600" height="280" src="video.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- About US -->
+	<div class="about-us my-3">
+		<div class="d-flex container justify-content-center">
+			<div class="col-lg-8 col-sm-11 text-about-us my-5">
+				<p class="text-center"> Качество и работа строго контролируется самим основателем, ведь члены его семьи - дети и внуки, являются основными клиентами и критиками. В нашей продукции используется ТОЛЬКО настоящее, высококачественное мясо и специй. Без вредных добавок, химикатов, сои и ГМО. В ассортименте имеется вареная и копченая продукция, самого наивысшего качества!
+				</p>
+			</div>
+		</div>
+	</div>
+
 <!-- Наши партнёры -->
 
-
-			<div class="partners my-5">
-				<div class="container">
-					<div class="text-center">
-						<div class="row clr justify-content-center mt-5 ">
-								<img src="line.jpg" alt="">
-								<h1>НАШИ ПАРТНЕРЫ</h1>
-								<img src="line.jpg" alt="">
-						</div>
-						<div class="row colb_type">
-						<div class="col-lg-4 my-3">
-							<img src="colib.png" alt="" class="partn1"> <!-- Colibri -->
-						</div>
-						<div class="col-lg-4 my-3">
-							<img src="onlyp.png" alt="" class="partn2"> <!-- Only pizza -->
-						</div>
-						<div class="col-lg-4 my-3">
-							<img src="bahcha.png" alt="" class="partn3"> <!-- Bahcha -->
-						</div>
+	<div class="d-flex justify-content-center mt-5 ">
+		<div class="clr">
+			<h2>НАШИ ПАРТНЕРЫ</h2>
+		</div>
+	</div>
+	<div class="partners my-4">
+		<div class="container">
+			<div class="text-center">
+				<div class="row colb_type">
+					<div class="col-lg-4 my-3">
+						<img src="colib.png" alt="" class="partn1"> <!-- Colibri -->
+					</div>
+					<div class="col-lg-4 my-3">
+						<img src="onlyp.png" alt="" class="partn2"> <!-- Only pizza -->
+					</div>
+					<div class="col-lg-4 my-3">
+						<img src="bahcha.png" alt="" class="partn3"> <!-- Bahcha -->
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 
 		<!-- FOOTER -->
     <div class="footer-container">
      <!-- блоки -->
       <div class="footer-blocks">
         <div class="block first-block p-2">
-          <div class="block-img ml-2">
+          <div class="block-img ml-4 mr-3">
             <img src="placeholder.png" alt="">
           </div>
           <div>
-            <p>4 представительства</p>
+            <p>Более 4 представительств</p>
             <h2>Контакты</h2>
           </div>
         </div>
         <div class="block second-block p-2">
-          <div class="block-img ml-2">
+          <div class="block-img ml-4 mr-3">
             <img src="call.png" alt="">
           </div>
           <div>
@@ -256,8 +273,8 @@
             <h2>8(727)200-00-00</h2>
           </div>
         </div>
-        <div class="block third-block p-2">
-          <div class="block-img ml-2">
+        <div class="block third-block p-2" id="order-btn2">
+          <div class="block-img ml-4 mr-3">
             <img src="email.png" alt="">
           </div>
           <div>
@@ -269,7 +286,7 @@
       <!-- контактная информация в footer -->
       <div class="footer-contact mt-5">
 
-        <div class="footer-blocks">
+        <div class="footer-blocks" id="contacts">
           <div class="block">
             <div>
               	<p>г. Астана: @kolbasnaya_feya</p>
