@@ -1,12 +1,15 @@
 html { overflow-x: hidden; }
 
+body {font-family: Verdana, sans-serif; margin:0}
+
 p {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .col-4 p {
 	line-height: 5px;
 	margin: 4px;
+  font-size: 1rem;
 }
 
 .mail img{
@@ -35,21 +38,44 @@ p {
   align-items: center;
 }
 
+.clr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  }
+
+.clr h2 {
+  width: 20%;
+  background-color: #cc0000;
+  color: white;
+  text-align: center;
+}
+
+@media all and (orientation:portrait) {
+  .clr h2 {
+    font-size: 1.5rem;
+    width: 80%;
+  }
+}
+
 .nav-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   list-style: none;
   padding: 0;
   white-space: nowrap;
-  overflow-x: auto;
+  width: 100%;
 }
 
 .nav-list li {
   font-size: 20px;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 10px;
-
+  width: 100%;
 }
 
 @media all and (orientation:portrait) {
@@ -67,17 +93,17 @@ p {
 
   }
   .nav-list li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 
   .nav-list li a {
-  width: 90%;
-  text-align: center;
-  background-color: #ffb3b3;
-}
+    width: 90%;
+    text-align: center;
+    background-color: #ffb3b3;
+  }
 }
 
 .nav-list li a {
@@ -95,10 +121,7 @@ p {
 	border-color: red;
 }
 
-body {font-family: Verdana, sans-serif; margin:0}
-
 .mySlides {display: none}
-
 
 /* Slideshow container */
 .slideshow-container {
@@ -160,6 +183,42 @@ body {font-family: Verdana, sans-serif; margin:0}
   .prev, .next,.text {font-size: 1.5rem;}
 }
 
+.banner {
+  display: none
+}
+.index-banner {
+  width: 100%;
+  height: calc(100vh - 300px);
+  background-image: url('s2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: table;
+}
+
+.vertical-center {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.index-banner h1 {
+  line-height: 30px;
+  font-size: 2rem;
+  font-weight: 600;;
+  color: #fff;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px 8px #111;
+}
+
+@media all and (max-width: 800px) {
+  .banner {
+    display: block;
+  }
+  .slideshow-container {
+    display: none
+  }
+}
 /*FLEX-BTN*/
 
 #order-btn {
@@ -226,7 +285,6 @@ body {font-family: Verdana, sans-serif; margin:0}
   cursor: pointer;
 }
 
-
 input[type=text], textarea {
   width: 100%;
   padding: 5px;
@@ -261,6 +319,13 @@ input[type=submit]:hover {
   color: white;
 }
 
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5px;
+}
+
 .varenny {
 	width: 100%;
 	height: 80%;
@@ -277,17 +342,28 @@ input[type=submit]:hover {
 
 .partn1 {
 	width: 220px;
-	height: 80px;
 }
 
 .partn2 {
 	width: 140px;
-	height:	140px;
 }
 
 .partn3 {
 	width: 	300px;
-	height: 120px;
+}
+
+@media all and (max-width: 600px) {
+  .partn1 {
+    width: 140px;
+  }
+
+  .partn2 {
+    width: 100px;
+  }
+
+  .partn3 {
+    width: 180px;
+  }
 }
 
 .footer-container {
@@ -333,6 +409,10 @@ input[type=submit]:hover {
   background-color: #e31515;
 }
 
+.third-block:hover {
+  cursor: pointer;
+}
+
 @media all and (max-width: 1000px) {
   .footer-blocks {
     flex-direction: column;
@@ -349,6 +429,13 @@ input[type=submit]:hover {
 	border-radius: 400px;
 }
 
-@media all and (max-width: 600px) {
-  p h2 {font-size: 0.5rem;}
+.footer-container p {
+  font-size: 1rem;
 }
+
+@media all and (max-width: 600px) {
+  .block h2 {font-size: 1rem;}
+  .first-block {height: 100px;}
+  .second-block {height: 100px;}
+  .third-block {height: 100px;}
+} 
