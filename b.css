@@ -443,13 +443,14 @@ input[type=submit]:hover {
 .logo {
 	width: 40%;
 	border-radius: 400px;
+	margin-bottom: 10px;
 }
 
 .footer-container p {
   font-size: 1rem;
 }
 
-@media all and (max-width: 1000px) {
+@media all and (max-width: 800px) {
   .block h2 {font-size: 1rem;}
   .first-block {height: 100px;}
   .second-block {height: 100px;}
