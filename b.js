@@ -22,9 +22,17 @@ function showSlides(n) {
 var modal = document.getElementById('myForm');
 var modalDiv = document.getElementById('form-div');
 var btn = document.getElementById('order-btn');
+var btn1 = document.getElementById('order-btn1');
+var btn2 = document.getElementById('order-btn2');
 var span = document.getElementsByClassName('close')[0];
 
 btn.onclick = function() {
+  modal.style.display = 'block';
+}
+btn1.onclick = function() {
+  modal.style.display = 'block';
+}
+btn2.onclick = function() {
   modal.style.display = 'block';
 }
 
