@@ -3,7 +3,7 @@ html { overflow-x: hidden; }
 body {font-family: Verdana, sans-serif; margin:0}
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .col-4 p {
@@ -211,7 +211,7 @@ p {
   text-shadow: 2px 2px 8px #111;
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 1000px) {
   .banner {
     display: block;
   }
@@ -236,7 +236,7 @@ p {
   z-index: 1;
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width:1100px) {
   #order-btn {display: none;}
 }
 
@@ -352,7 +352,7 @@ input[type=submit]:hover {
 	width: 	300px;
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 1000px) {
   .partn1 {
     width: 140px;
   }
@@ -413,7 +413,7 @@ input[type=submit]:hover {
   cursor: pointer;
 }
 
-@media all and (max-width: 1000px) {
+@media all and (orientation:portrait) {
   .footer-blocks {
     flex-direction: column;
     align-items: center;
@@ -433,7 +433,7 @@ input[type=submit]:hover {
   font-size: 1rem;
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 1000px) {
   .block h2 {font-size: 1rem;}
   .first-block {height: 100px;}
   .second-block {height: 100px;}
