@@ -3,7 +3,7 @@ html { overflow-x: hidden; }
 body {font-family: Verdana, sans-serif; margin:0}
 
 p {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .col-4 p {
@@ -182,53 +182,6 @@ p {
 @media all and (max-width: 1100px) {
   .prev, .next,.text {font-size: 1.5rem;}
 }
-
-.banner {
-  display: none
-}
-.index-banner {
-  width: 100%;
-  height: calc(100vh - 500px);
-  background-image: url('s2.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: table;
-}
-
-.vertical-center {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.index-banner h1 {
-  line-height: 30px;
-  font-size: 2rem;
-  font-weight: 600;;
-  color: #fff;
-  font-style: italic;
-  text-align: center;
-  text-shadow: 2px 2px 8px #111;
-}
-
-@media all and (max-width: 1100px) {
-  .banner {
-    display: block;
-  }
-  .slideshow-container {
-    display: none
-  }
-}
-
-@media all and (orientation:portrait) {
-  .banner {
-    display: block;
-  }
-  .slideshow-container {
-    display: none
-  }
-}
-
 
 /*FLEX-BTN*/
 
